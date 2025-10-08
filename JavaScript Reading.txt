@@ -1,0 +1,30 @@
+#JavaScript Reading
+###Chapter 1 
+
+####Thing I knew
+
+I knew what Boolean values were before reading this. That there are only two values. 
+
+####Thing I didn't know
+
+I learned that strings are a type of data that is used to represent text. 
+
+###Chapter 2
+
+####Thing I knew
+
+I assumed before that programs would typically be executed from top to bottom unless directed to do something different. We also sorta learned about the remainder operator so I recognized that. 
+
+####Thing I didn't know
+
+I didn’t know that you could add comments that the computer ignores using the two slashes. 
+
+###Chapter 3 
+
+####Thing I knew
+
+I had heard before that people usually have around 20,000 words in their vocabulary.
+
+####Thing I didn't know
+
+I didn't know that a function was like a shortcut that you program yourself.
