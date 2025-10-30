@@ -13,31 +13,64 @@ Even after reading the instructions it took a little bit of experimenting with t
 After that translating was fairly easy I just needed to delete some of the lines I had copied from class like “fill”, and ”noStroke” in order to get just the outline of the shapes and no fill in so that my block figure would work. 
 
 
+
+    function setup() {
+    createCanvas(80, 200);
+    background(265);
+  
+    }
+     function draw() {
+      //head
+      ellipse(40, 40, 80, 80);
+  
+      //eyes
+      ellipse(30, 40, 20, 20);
+      ellipse(50, 40, 20, 20);
+  
+      //mouth
+      line(30, 60, 50, 60);
+  
+      //body
+      rect(30, 80, 20, 80);
+ 
+      //arms
+      rect(0, 90, 30, 20);
+      rect(50, 90, 30, 20);
+  
+      //legs
+      rect(0, 160, 30, 40);
+      rect(50, 160, 30, 40);  
+    }
+
+
+
+
 ## Phase 3
 
 After that I tried really hard to comprehend the instructions in the assignment and got some of it but not all of it. I copied the code(line 64-85) that was written in the instructions but altered it so that instead of being on top and bottom the drawings were side by side.
-function setup() {
-  createCanvas(400, 400); // Set the size of canvas
-  noStroke(); // Disable drawing the stroke
-}
 
-function drawObject(x, y, s) {
-  push();
-  translate(x, y);
-  scale(s);
-  fill(0); // Fill in with black color
-  rect(40, 10, 60, 10); // Draw rectangles
-  rect(40, 10, 5, 50);
-  rect(100, 10, 5, 50);
-  ellipse(30, 60, 30, 20); // Draw ellipses
-  ellipse(90, 60, 30, 20);
-  pop();
-}
+    function setup() {
+     createCanvas(400, 400); // Set the size of canvas
+      noStroke(); // Disable drawing the stroke
+     }
 
-function draw() {
-  drawObject(0, 0, 1);
-  drawObject(0, 200, 1);
-}
+     function drawObject(x, y, s) {
+       push();
+       translate(x, y);
+       scale(s);
+       fill(0); // Fill in with black color
+       rect(40, 10, 60, 10); // Draw rectangles
+       rect(40, 10, 5, 50);
+       rect(100, 10, 5, 50);
+       ellipse(30, 60, 30, 20); // Draw ellipses
+       ellipse(90, 60, 30, 20);
+       pop();
+     }
+
+     function draw() {
+       drawObject(0, 0, 1);
+       drawObject(0, 200, 1);
+     }
 
 ## Phase 4
 
@@ -58,11 +91,11 @@ I cannot comprehend what this means.
 
 I wrote this based on the chessboard code in the code along but I’m not sure it’s on the right track or really what it means 
 
-let x = 10
-let y = 10
+    let x = 10
+    let y = 10
 
-for (let y = 0; y = y; y++) {
-  for (let x = 0; x = x; x++) {
+    for (let y = 0; y = y; y++) {
+      for (let x = 0; x = x; x++) {
 
 I know there has to be the multiply the cell width part but I don’t understand how to do that. 
 
@@ -72,66 +105,68 @@ I consulted ChatGPT
  ![](SSs/GPT_SS_2.png)
  ![](SSs/GPT_SS_3.png)
 
-function draw() {
-  background(220);
+     function draw() {
+       background(220);
   
-  let tileSize = 50; // each tile is 50x50
+       let tileSize = 50; // each tile is 50x50
   
-  for (let y = 0; y < height; y += tileSize) {
-    for (let x = 0; x < width; x += tileSize) {
-      drawTile(x, y, tileSize);
+       for (let y = 0; y < height; y += tileSize) {
+         for (let x = 0; x < width; x += tileSize) {
+        drawTile(x, y, tileSize);
+        }
+      }
     }
-  }
-}
 
 I took that code from ChatGPT and tried putting it in the phase 3 sketch and changed the drawTile to drawObject. That didn’t do anything so next I tried putting my drawing into the ChatGPT code. This looked more promising as there were repeats of my drawing but they weren’t spaced correctly because the ChatGPT code was made for a square cell and my cells had to be rectangular. 
 
-Next I got this code function setup() {
-  createCanvas(400, 400);
+Next I got this code 
 
-}
+    function setup() {
+       createCanvas(400, 400);
 
-function draw() {
-  background(220);
+     }
+
+     function draw() {
+       background(220);
   
-  let tileHeight = 200; 
-  let tileWidth = 80;
+      let tileHeight = 200; 
+       let tileWidth = 80;
   
-  for (let y = 0; y < height; y += tileHeight) {
-    for (let x = 0; x < width; x += tileWidth) {
-      drawObject(x, y, tileHeight * tileWidth);
+      for (let y = 0; y < height; y += tileHeight) {
+        for (let x = 0; x < width; x += tileWidth) {
+         drawObject(x, y, tileHeight * tileWidth);
+        }
+      }
     }
-  }
-}
 
-function drawObject(x, y, s) {
-  push(); 
-  translate(x, y);
+     function drawObject(x, y, s) {
+      push(); 
+     translate(x, y);
   
  
-  //head
-  ellipse(40, 40, 80, 80);
+     //head
+      ellipse(40, 40, 80, 80);
   
-  //eyes
-  ellipse(30, 40, 20, 20);
-  ellipse(50, 40, 20, 20);
+      //eyes
+      ellipse(30, 40, 20, 20);
+      ellipse(50, 40, 20, 20);
   
-  //mouth
-  line(30, 60, 50, 60);
+      //mouth
+      line(30, 60, 50, 60);
   
-  //body
-  rect(30, 80, 20, 80);
+      //body
+     rect(30, 80, 20, 80);
  
-  //arms
-  rect(0, 90, 30, 20);
-  rect(50, 90, 30, 20);
+    //arms
+     rect(0, 90, 30, 20);
+     rect(50, 90, 30, 20);
   
-  //legs
-  rect(0, 160, 30, 40);
-  rect(50, 160, 30, 40);
+     //legs
+     rect(0, 160, 30, 40);
+     rect(50, 160, 30, 40);
   
-  pop(); 
-}
+     pop(); 
+    }
 
 I altered the let bindings so that the figures would fit together but I still need to figure out how to scale them when I want to change the size. 
 
