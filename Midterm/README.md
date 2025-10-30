@@ -68,9 +68,9 @@ I know there has to be the multiply the cell width part but I don’t understand
 
 I consulted ChatGPT 
 
-![Screenshot 1](./SSs/GPT SS 1.png)
-![Screenshot 2](./SSs/GPT SS 2.png)
-![Screenshot 3](./SSs/GPT SS 3.png)
+![](./SSs/GPT SS 1.png)
+![](./SSs/GPT SS 2.png)
+![](./SSs/GPT SS 3.png)
 
 function draw() {
   background(220);
