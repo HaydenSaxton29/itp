@@ -100,6 +100,8 @@ After I did that I realized that the master effect knobs were not turning. I the
 
 ![DM5 1.0](FinalSS/DM5_1.0.png)
 
+![DM5 1.1](FinalSS/DM5_1.1.png)
+
 ## Reflection 
 
 If I had to do this project again I would’ve picked something much simpler that I could’ve done with minimal AI. I still had a lot of fun kind of going crazy with it but I feel guilty relying on AI as much as I did in the project. I definitely learned a lot from this project but I feel as though I could’ve learned more if I had started smaller. 
