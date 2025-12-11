@@ -1,12 +1,12 @@
-#Intro to Programming Final
+# Intro to Programming Final
 
-##Idea
+## Idea
 
 So the plan for this was to make something sort of similar to a very basic version of the Moog DFAM which has steps and each step has two knobs which can control different things per step. 
 
 ![Moog Dfam](FinalSS/DFAM.png)
 
-##Phase 1
+## Phase 1
 
 I started with this prompt in claude. I tried to be as direct as possible because I wanted to be as efficient as possible. 
 
@@ -29,7 +29,7 @@ I messed around with the positions until I got it to something that felt right a
 
 I made the knobs bigger using the size parameter. I just tried changing each of the numbers on drawKnob lines until something made them bigger. 
 
-##Phase 3
+## Phase 3
 
 After I made those look a little bit nicer I noticed that the knobs were not very easy to use. The only place where the mouse worked to adjust them was inside the knob itself and they were pretty small and not very sensitive to input from the mouse which made it hard to make large changes. 
 
@@ -45,7 +45,7 @@ Next I changed some of the synth settings like the base decay and sustain of the
 
 ![DM2](FinalSS/DM2.png)
 
-##Phase 3.5
+## Phase 3.5
 
 
 Next I decided I wanted to change the colors a bit to make it look more fun. I started by copying the color palette from a CR-78 just because I liked the colors. I used an online “color picker” in order to copy the rgb color thingy. [Color Picker](https://imagecolorpicker.com/) I pasted the rgb numbers into the spots that said fill and stroke and experimented a bit with different colors for different parts until I settled on this. 
@@ -62,7 +62,7 @@ It ended up looking like this
 
 ![DM3](FinalSS/DM3.png)
 
-##Phase 4/5
+## Phase 4/5
 
 Next I wanted to add a reverb wetness knob and a reverb effect so I asked Claude for that. 
 
@@ -100,7 +100,7 @@ After I did that I realized that the master effect knobs were not turning. I the
 
 ![DM5 1.0](FinalSS/DM5_1.0.png)
 
-##Reflection 
+## Reflection 
 
 If I had to do this project again I would’ve picked something much simpler that I could’ve done with minimal AI. I still had a lot of fun kind of going crazy with it but I feel guilty relying on AI as much as I did in the project. I definitely learned a lot from this project but I feel as though I could’ve learned more if I had started smaller. 
 
